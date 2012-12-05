@@ -1,5 +1,8 @@
 NDI-chenapans-2012
 ==================
 
-Préparation de la nuit de l'info 2012 pour l'équipe "les chenapans"
-Vive les chenapans !
+Preparation of la nuit de l'info 2012 for the team "les chenapans".
+
+Vive les chenapans!
+
+Team members : Paul Gouy, Julien Ernwein, Maxime Heckel, Yaohua Liang, Vincent Kaestle, Chenlong Hu, Magali Etcheverria, Matthieu Jeanson.
