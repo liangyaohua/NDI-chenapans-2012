@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+@import url("jquery.mobile-1.0.1.min.css");
+
+ul {
+	 margin-top: -15px;
+	padding-left: 25px;
+}
