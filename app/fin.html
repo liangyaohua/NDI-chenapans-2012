@@ -20,14 +20,12 @@
 <div data-role="page" id="fin" data-theme="a">
 
 	<div data-role="header">
-		<h1>
-			<img src="img/cocorico.png" width='90%'/> 
-		</h1>
+		<h1><img src="img/cocorico.png" id="logo"/></h1>
 	</div>
 
 	<div data-role="content" >
-		<img src="img/5.png" width='90%'/> 
-		<p> Bravo ! Tu as terminé l'aventure !</p>
+		<img class="centrer" src="img/5.png" style="width: 100%;"/>
+		<h2>Bravo ! Tu as terminé l'aventure !</h2>
 		<a href="index.html"  data-role="button" data-theme="d">Retour à l'accueil</a>
 		<a href="index.html"  data-role="button" data-theme="d">Partage ton aventure sur Facebook</a><br><br>
 		<script type='text/javascript'>
@@ -38,7 +36,7 @@ pic[0]=new Image();
 pic[0].src="img/star_empty.png";
 pic[1]=new Image();
 pic[1].src="img/star_full.png";
-var bareme = new Array(": Un peu ",": Ça m'a plu ",": Super aventure !",": C'était génial !",": Formidable !") 
+var bareme = new Array(": Un peu ",": Ça m'a plu ",": Superbe aventure !",": C'était génial !",": Formidable !") 
  
  function rate(level){
  if (done){return false;}

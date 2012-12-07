@@ -20,15 +20,20 @@
 <div data-role="page" id="accueil" data-theme="a">
 
 	<div data-role="header">
-		<h1>
-			Cocorico
-		</h1>
+		<h1><img src="img/cocorico.png" id="logo"/></h1>
 	</div>
 	
 	<div data-role="content" >
-		<h1>Trouvez votre aventure !</h1>
-		<h3><a href="" data-role="button" data-icon="gps" data-iconpos="bottom">Utiliser votre GPS</a></h3>
-		<ul data-role="listview" data-filter="true" data-inset="true" data-split-icon="delete" data-split-theme="d" >
+		<h1>Trouve ton aventure !</h1>
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+				<input type="search" name="search" id="search-basic" value="" />
+			</div>
+			<div class="ui-block-b">
+				<a href="" data-role="button" data-icon="gps" data-inline="true" class="ui-disabled">Utiliser votre GPS</a>
+			</div>
+		</div>
+		<ul data-role="listview" data-inset="true" data-split-icon="delete" data-split-theme="d" >
 			<li><a href="aventure.html" rel="external">
 				<img src="img/strasbourg.jpg" />
 				<h3>L'Homme de Fer - Strasbourg</h3>

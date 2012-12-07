@@ -1,8 +1,39 @@
-@charset "UTF-8";
+.ui-icon-speech {
+	background-image: url("../img/speech.png");
+	background-size: 18px 18px;
+}
 
-@import url("jquery.mobile-1.0.1.min.css");
+#logo{
+	width:90%;
+}
 
-ul {
-	 margin-top: -15px;
-	padding-left: 25px;
+.ui-bar-a {
+	background: #F8FAF2;
+	border:none;
+}
+
+.ui-body-a,
+.ui-dialog.ui-overlay-a {
+	background: #EEEFF3;
+	color:#222;
+	border:none;
+}
+
+.ui-body-a,
+.ui-dialog.ui-overlay-a.p{
+	text-align:justify;
+	/*font-size:1.8em;*/
+}
+
+.centrer{
+	text-align:center;
+	/*font-size:2em;*/
+}	
+
+.ui-input-search { background:#fff;}
+
+.img_aventure{
+	max-width:50%;
+	max-height:50%;	
+	border-radius:15px;
 }
