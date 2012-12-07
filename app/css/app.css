@@ -3,6 +3,11 @@
 	background-size: 18px 18px;
 }
 
+.ui-icon-gps {
+	background-image: url("../img/gps.png");
+	background-size: 18px 18px;
+}
+
 #logo{
 	width:90%;
 }
