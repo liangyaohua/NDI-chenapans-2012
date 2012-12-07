@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>	
+	<title>Cocorico</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8" />
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="css/app.css" />
+
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<script src="js/cordova-2.2.0.js"></script>
+</head>
+
+<body>
+
+<div data-role="page" id="fin" data-theme="a">
+
+	<div data-role="header">
+		<h1>
+			<img src="img/Logo - Cocorico-01.png" width='90%'/> 
+		</h1>
+	</div>
+
+	<div data-role="content" >
+		<img src="img/5.png" width='90%'/> 
+		<p> Bravo ! Tu as terminé l'aventure !</p>
+		<a href="index.html" data-inline='true' data-role="button" data-theme="d">Retour à l'accueil</a>
+		<a href="index.html" data-inline='true' data-role="button" data-theme="d">Partage ton aventure sur Facebook</a><br><br>
+		<script type='text/javascript'>
+var done=false
+var Vote=0;
+var pic = new Array();
+pic[0]=new Image();
+pic[0].src="img/star_empty2.png";
+pic[1]=new Image();
+pic[1].src="img/star_full2.png";
+var bareme = new Array(": Un peu ",": Ça m'a plu ",": Super aventure !",": C'était génial !",": Formidable !") 
+ 
+ function rate(level){
+ if (done){return false;}
+  for(i=1;i<6;i++){ document.getElementById('_'+i).src=(level<i)?pic[0].src:pic[1].src;
+  document.getElementById('vote').innerHTML="Ton vote : "+level+" étoile(s)   "+bareme[level-1]+" " 
+  Vote=level;
+  }
+  }
+ 
+ function zero(){
+	 for(i=1;i<6;i++){ document.getElementById('_'+i).src=pic[0].src;
+	 done=false;
+	 document.getElementById('vote').innerHTML="Ton vote : 0 étoile(s)" ;
+	 Vote=0;
+ 	 }
+	 }
+ function valider(){
+ done=true;
+ document.getElementById('vote').innerHTML+='   VALID&Eacute;'
+ }
+ 
+  </script>
+</head>
+ 
+<body>
+Donne une note à l'aventure:<br /><br />
+<img src="img/star_empty2.png" id='_1' onclick="valider()" onmouseover="rate(1)" /><img src="img/star_empty2.png" id='_2' onclick="valider()"  onmouseover="rate(2)" /><img src="img/star_empty2.png" id='_3' onclick="valider()"  onmouseover="rate(3)" /><img src="img/star_empty2.png" id='_4' onclick="valider()"  onmouseover="rate(4)"  /><img src="img/star_empty2.png" id='_5' onclick="valider()"  onmouseover="rate(5)"  />
+<br /><br/>
+<div id="vote">Ton vote : 0 étoile(s) </div><br /><br/>
+<!--<input type="button" onclick="zero();" value="reset"/>-->
+<!--<input type="button" onclick="alert(Vote);" data-inline='true' value="Vote"/>-->
+	</div>
+</div>
+
+</body>
+</html>
